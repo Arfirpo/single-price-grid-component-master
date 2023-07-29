@@ -25,99 +25,145 @@ body{
 
 }
 .main-container{
-    width: 312px;
-    margin: 70px auto;
-    border-radius: 5px;
+    width: 19.5rem;
+    margin: 4.375rem auto;
+    border-radius: .3125rem;
     overflow: hidden;
     background-color: var(--White);
 }
 
 .description{
-    width: 270px;
-    margin: 0 20px 33px 22px;
-    padding-top: 26px;
+    width: 16.875rem;
+    margin: 0 1.25rem 2.0625rem 1.375rem;
+    padding-top: 1.625rem;
     
 }
 .description-title{
-    margin-bottom: 26px;
-    font-size: 20px;
+    margin-bottom: 1.625rem;
+    font-size: 1.25rem;
     color: var(--Cyan);
 }
 .description-subtitle{
-    font-size: 16px;
-    margin-bottom: 24px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
     color: var(--BrightYellow);
 }
 .description-paragraph{
-    font-size: 14px;
-    line-height: 25px;
+    font-size: .875rem;
+    line-height: 1.5625rem;
     color: var(--GrayishBlue);
 }
-.offer__monthly-subscription{
+.monthly-subscription{
     background: var(--Cyan);
-    padding: 30px 24px 24px;
+    padding: 1.875rem 1.5rem 1.5rem;
 }
-.offer__monthly-subscription-title{
+.monthly-subscription-title{
     color: #fff;
-    font-size: 18px;
-    letter-spacing: 0.3px;
+    font-size: 1.125rem;
+    letter-spacing: .01875rem;
     font-weight: 400;
-    margin-top: -1px;
-    margin-bottom: 15px;
+    margin-top: -0.0625rem;
+    margin-bottom: .9375rem;
 }
-.offer__monthly-subscription-price{
+.monthly-subscription-price{
     display: flex;
     color: var(--White);
-    margin-bottom: 6px;
+    margin-bottom: .375rem;
 }
-.offer__monthly-subscription-price-dollar{
-    font-size: 33px;
+.monthly-subscription-price-dollar{
+    font-size: 2.0625rem;
     font-weight: 700;
-    margin-right: 15px;
+    margin-right: .9375rem;
 }
-.offer__monthly-subscription-price-text{
+.monthly-subscription-price-text{
     align-self: center;
     color: #6fd8d3;
 }
-.offer__monthly-subscription-description{
+.monthly-subscription-description{
     color: #d0ffff;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
-.offer__monthly-subscription-button{
+.monthly-subscription-button{
     width: 100%;
-    height: 50px;
-    border-radius: 5px;
+    height: 3.125rem;
+    border-radius: .3125rem;
     font-weight: 700;
     color: var(--White);
     text-align: center;
     border: none;
     background: var(--BrightYellow);
 }
-.offer__why-us{
+.why-us{
     color: var(--White);
     background: var(--Lightcyan);
-    padding: 23px 0 20px 16px;
+    padding: 1.4375rem 0 1.25rem 1rem;
 }
-.offer__why-us-title{
-    margin-bottom: 20px;
-    font-size: 20px;
+.why-us-title{
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
     font-weight: 400;
 }
-.offer__why-us-description{
-    color:#ccf8f8;
+.why-us-description{
+    color:#a9eff3;
     text-align: left;
-    letter-spacing: -.3px;
-    line-height: 20px;
+    letter-spacing: -.01875rem;
+    line-height: 1.25rem;
 }
 .tip{
     list-style-type: none;
-    font-size: 13px;
+    font-size: .8125rem;
 }
-
 .attribution {
-    font-size: 11px; 
+    margin-top: -5rem;
+    font-size: .6875rem; 
     text-align: center;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width:680px){
+    .main-container{
+        width: 39.75rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10rem auto 6.25rem;
+    }
+    .description{
+        width: 100%;
+        height: 13.5rem;
+        grid-column: 1 / 3;
+        padding: 2.8125rem 4.625rem 2.5rem  2.375rem;
+        margin: 0;
+    }
+    .description-title{
+        font-size: 1.5625rem;
+        margin-top: -.3125rem;
+        margin-bottom: 1.25rem;
+    }
+    .description-subtitle{
+        font-size: 1.125rem;
+        margin-bottom: .875rem;
+    }
+    .description-paragraph{
+        width: 31.6875rem;
+        font-weight: 400;
+        font-size: .9375rem;
+    }
+    .monthly-subscription{
+        height: 16.25rem;
+        padding: 2.625rem 2.375rem 1.875rem;
+    }
+    .monthly-subscription-description{
+        margin-bottom: 1.9375rem;
+    }
+    .why-us{
+        height: 16.25rem;
+        padding: 2.625rem 0 2.375rem 2.5rem;
+    }
+    .attribution{
+        font-size: .875rem;
+    }
+
 }
