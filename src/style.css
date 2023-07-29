@@ -124,14 +124,16 @@ body{
     font-size: .8125rem;
 }
 .attribution {
-    margin-top: -5rem;
-    font-size: .6875rem; 
+    font-weight: 700;
+    width: 100%;
+    margin: -3.875rem auto 0;
     text-align: center;
+    font-size: .6875rem;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-@media (min-width:680px){
+@media (min-width:42.5rem){
     .main-container{
         width: 39.75rem;
         display: grid;
@@ -171,6 +173,8 @@ body{
         padding: 2.625rem 0 2.375rem 2.5rem;
     }
     .attribution{
+        width: 100%;
+        margin-top: -5rem;
         font-size: .875rem;
     }
 
