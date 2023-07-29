@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    /*Primary*/
+    --Cyan: hsl(179, 62%, 43%);
+    --Lightcyan: #4abebd;
+    --BrightYellow: hsl(71, 73%, 54%);
+    /*Neutral*/
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+    --White: #fff;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    background-color: var(--LightGray);
+
+}
+.main-container{
+    width: 312px;
+    margin: 70px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--White);
+}
+
+.description{
+    width: 270px;
+    margin: 0 20px 33px 22px;
+    padding-top: 26px;
+    
+}
+.description-title{
+    margin-bottom: 26px;
+    font-size: 20px;
+    color: var(--Cyan);
+}
+.description-subtitle{
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: var(--BrightYellow);
+}
+.description-paragraph{
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--GrayishBlue);
+}
+.offer__monthly-subscription{
+    background: var(--Cyan);
+    padding: 30px 24px 24px;
+}
+.offer__monthly-subscription-title{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+    margin-top: -1px;
+    margin-bottom: 15px;
+}
+.offer__monthly-subscription-price{
+    display: flex;
+    color: var(--White);
+    margin-bottom: 6px;
+}
+.offer__monthly-subscription-price-dollar{
+    font-size: 33px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+.offer__monthly-subscription-price-text{
+    align-self: center;
+    color: #6fd8d3;
+}
+.offer__monthly-subscription-description{
+    color: #d0ffff;
+    margin-bottom: 25px;
+}
+.offer__monthly-subscription-button{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: var(--White);
+    text-align: center;
+    border: none;
+    background: var(--BrightYellow);
+}
+.offer__why-us{
+    color: var(--White);
+    background: var(--Lightcyan);
+    padding: 23px 0 20px 16px;
+}
+.offer__why-us-title{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.offer__why-us-description{
+    color:#ccf8f8;
+    text-align: left;
+    letter-spacing: -.3px;
+    line-height: 20px;
+}
+.tip{
+    list-style-type: none;
+    font-size: 13px;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
