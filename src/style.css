@@ -5,6 +5,8 @@
     --Cyan: hsl(179, 62%, 43%);
     --Lightcyan: #4abebd;
     --BrightYellow: hsl(71, 73%, 54%);
+    --BrightYellow2: hsl(70, 100%, 49%);
+    --BrightYellow3: hsl(63, 100%, 49%);
     /*Neutral*/
     --LightGray: hsl(204, 43%, 93%);
     --GrayishBlue: hsl(218, 22%, 67%);
@@ -93,6 +95,14 @@ body{
     border: none;
     background: var(--BrightYellow);
 }
+.monthly-subscription-button:hover{
+    cursor: pointer;
+    background: var(--BrightYellow2);
+}
+.monthly-subscription-button:active{
+    background: var(--BrightYellow3);
+    color: var(--GrayishBlue);
+}
 .why-us{
     color: var(--White);
     background: var(--Lightcyan);
@@ -121,8 +131,6 @@ body{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-
-
 @media (min-width:680px){
     .main-container{
         width: 39.75rem;
